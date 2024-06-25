@@ -420,6 +420,7 @@ MonoBehaviour:
   max: 10
   objetos:
   - {fileID: 3493045705092908346, guid: 1b158c25f85a5b54498e3d8c5fdfc786, type: 3}
+  - {fileID: 4394774223267314406, guid: 206f29fd781a7d14f80a6056c8645a9d, type: 3}
   spawnpoint: {fileID: 1971568737}
 --- !u!4 &1971568737
 Transform:

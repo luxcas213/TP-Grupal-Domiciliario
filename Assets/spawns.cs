@@ -7,6 +7,8 @@ public class spawns : MonoBehaviour
     public int cantidad;
     private int cantidadactual;
 
+    private int index;
+
     public int min, max;
     public GameObject[] objetos;
     public Transform spawnpoint;
@@ -15,6 +17,7 @@ public class spawns : MonoBehaviour
 
     void Start()
     {
+        index = Random.Range(0, objetos.Length);  //random de objeto
         cantidad = Random.Range(min, max + 1);
         cantidadactual=cantidad;
         
@@ -24,7 +27,7 @@ public class spawns : MonoBehaviour
     void spawnearcosas()
     {
         cantidadactual--;
-        int index = Random.Range(0, objetos.Length);  //random de objeto
+        
 
         float potitionX=Random.Range(-parametros,parametros);  //ramdom de posision
         float potitionZ=Random.Range(-parametros,parametros);
